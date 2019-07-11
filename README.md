@@ -1,2 +1,2 @@
-# learning
+# Learning
 Git repo for learning folder
