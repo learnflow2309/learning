@@ -3,9 +3,9 @@
 $greeting = "Hello";
 
 $names = [
-    'Bran',
-    'John',
-    'Mark'
+    "Bran",
+    "John",
+    "Mark"
 ];
 
 /* foreach ($names as $name) {
