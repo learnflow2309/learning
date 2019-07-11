@@ -23,6 +23,27 @@
             <li><?= $names[1]; ?></li>
             <li><?= $names[2]; ?></li>
         </ul>
+        <ul style="list-style-type: none; padding: 0;">        
+            <?php 
+                foreach ($names as $name) : 
+                /**
+                 * Rascjepana verzija foreach-a, gdje se između dva renderiranja može ubaciti html i dodatno renderiranje
+                */
+            ?>
+
+            <li>
+                <?=
+                    $name;
+                ?>
+            </li>
+
+            <?php 
+                endforeach;
+                /**
+                 * Rascjepana verzija foreach-a, gdje se između dva renderiranja može ubaciti html i dodatno renderiranje
+                */
+            ?>
+        </ul>
     </header>
 </body>
 </html>
