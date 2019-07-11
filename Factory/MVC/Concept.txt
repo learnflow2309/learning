@@ -1,0 +1,5 @@
+Svaki dio koda koji ima svoju ulogu treba odvojiti u zasebnu logičku cjelinu (file)!
+MVC (Model, View, Controller) raspodjela koda
+Model - Poslovna logika i obrada podataka
+View - Prikaz obrađenih podataka
+Controller - Upravljanje zahtjevima (HTPP requests)
