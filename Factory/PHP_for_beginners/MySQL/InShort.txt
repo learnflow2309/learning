@@ -1,0 +1,31 @@
+Uvod:
+MySQL je sustav za upravljanje bazom podataka
+Sastavni dio serverskih Linux distribucija
+Ako se koristi XAMPP, pokrenuti XAMPP-ov Shell sa XAMPP-ovog UI-a
+
+Općenito:
+Svaki Objekt bi trebao imati svoju Tablicu u Bazi
+Naziv baze inače ima naziv projekta
+NULL znači ništa (Nije nula kao broj, nego je prazno, prazna vrijednost)
+PRIMARY KEY znači da je vrijednost u stupcu jedinstvena
+Ako je stupac tablice AUTO_INCREMENT onda kod ubacivanja reda u tablicu nije potrebno definirati to polje, samo će se ažurirati
+Tražiti "free SQL database gui" 
+HeidiSQL je dobar GUI za upravljanje bazom podataka
+
+Naredbe:
+1 Za login > "mysql -u root" ili "mysql -u root -p PASSWORD"
+2 Za prikaz svih trenutnih baza > "show databases;"
+3 a Za dodavanje baze > "create database mytodo"
+  b Nakon što se u konzoli pojavi "->" upisati ";" i pritisnuti "Enter"
+4 Prebacivanje na željenu bazu > use mytodo;
+5 Za prikaz svih trenutnih tablica baze > "show tables;"
+6 Za dodavanje tablice > 
+"create table todos (description text, completed boolean);" 
+ili 
+"create table todos (description text NOT NULL, completed boolean NOT NULL);" ako želimo da vrijednosti u stupcima ne mogu biti NULL
+ili
+"create table todos (id integer PRIMARY KEY AUTO_INCREMENT, description text NOT NULL, completed boolean NOT NULL);"
+7 Za vizualni prikaz detalja stupaca tablice > "describe todos;"
+8 Za brisanje tablice > "drop table todos;
+9 Za dodavanje reda u tablici > "insert into todos (description, completed) values ("You have to go to work!", true);"
+10 Za vizualni prikaz redova tablice > select * from todos;
