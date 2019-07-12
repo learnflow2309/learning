@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Age verifications</title>
+    <title>Age verification</title>
   </head>
   <body>
     <div id="main-wrapper" style="padding-left: 10px; max-width: 1000px;">
